@@ -24,8 +24,12 @@ namespace Sayvin
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/color-option1.css",
+                      "~/Content/color-option2.css",
+                      "~/Content/color-option3.css",
+                      "~/Content/color-option4.css",
+                      "~/Content/style.css",
+                      "~/Content/default.css"));
         }
     }
 }
