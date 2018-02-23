@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Data.Entity.Spatial;
 
@@ -7,21 +6,18 @@ namespace Sayvin.Models
 {
     public class ClientModel
     {
-
         [Key]
         public int Id { get; set; }
-
-        public string UserId { get; set; }
 
         public string Email { get; set; }
 
         [Display(Name = "Name", Description = "")]
         [Required(ErrorMessage = " ")]
-        public string ClientName { get; set; }
+        public string Name { get; set; }
 
         [Display(Name = "Last Name", Description = "")]
         [Required(ErrorMessage = " ")]
-        public string ClientLastName { get; set; }
+        public string LastName { get; set; }
 
         [Required(ErrorMessage = " ")]
         public DateTime Birth { get; set; }
